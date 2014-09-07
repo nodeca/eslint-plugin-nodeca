@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-nodeca",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Custom eslint rules, used in Nodeca projects.",
   "keywords": [ "indent", "eslint" ],
   "homepage": "https://github.com/nodeca/eslint-plugin-nodeca",
