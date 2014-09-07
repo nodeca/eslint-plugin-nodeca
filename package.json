@@ -1,13 +1,27 @@
 {
-  "name"            : "eslint-plugin-nodeca",
-  "version"         : "1.0.0",
-  "description"     : "Custom eslint rules, used in Nodeca projects.",
-  "homepage"        : "https://github.com/nodeca/eslint-plugin-nodeca",
-
-  "bugs"            : { "url": "https://github.com/nodeca/eslint-plugin-nodeca/issues" },
-  "license"         : { "type": "MIT", "url": "https://github.com/nodeca/eslint-plugin-nodeca/blob/master/LICENSE" },
-  "repository"      : { "type": "git", "url": "git://github.com/nodeca/eslint-plugin-nodeca.git" },
-
-  "main"            : "./index.js"
+  "name": "eslint-plugin-nodeca",
+  "version": "1.0.0",
+  "description": "Custom eslint rules, used in Nodeca projects.",
+  "homepage": "https://github.com/nodeca/eslint-plugin-nodeca",
+  "bugs": {
+    "url": "https://github.com/nodeca/eslint-plugin-nodeca/issues"
+  },
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/nodeca/eslint-plugin-nodeca/blob/master/LICENSE"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nodeca/eslint-plugin-nodeca.git"
+  },
+  "main": "./index.js",
+  "scripts": {
+    "test": "node node_modules/.bin/eslint --rulesdir lib ./ && node_modules/.bin/mocha"
+  },
+  "devDependencies": {
+    "eslint": "^0.8.0",
+    "eslint-tester": "^0.2.0",
+    "js-yaml": "^3.2.2",
+    "mocha": "^1.21.4"
+  }
 }
-

@@ -8,4 +8,3 @@ module.exports = {
     'no-wire-anonymous': require('./lib/no-wire-anonymous')
   }
 };
-

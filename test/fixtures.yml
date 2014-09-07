@@ -1,0 +1,21 @@
+indent:
+
+  valid:
+    - |
+      var a
+        , b;
+
+    - |
+      if (a > 0) {
+        b++;
+      }
+
+  invalid:
+    -
+      code: |
+        if (a > 0) {
+             b++;
+        }
+
+      errors:
+        - message: 'Bad indentation (5 instead 2).'
