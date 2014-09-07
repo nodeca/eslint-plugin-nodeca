@@ -35,11 +35,8 @@ rules:
   space-after-keywords: [ 2, always ] # Fixed in master
   space-in-brackets:    [ 1, always ]
 
-
   # temporary
-  global-strict:        0
   no-func-assign:       0
-  yoda:                 0
 
   #
   # Our custom rules
