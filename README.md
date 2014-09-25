@@ -1,15 +1,21 @@
-ESLint custom rules for Nodeca projects
-=======================================
+ESLint indentation check and other rules
+========================================
 
 [![Build Status](https://travis-ci.org/nodeca/eslint-plugin-nodeca.svg?branch=master)](https://travis-ci.org/nodeca/eslint-plugin-nodeca)
 [![NPM version](https://img.shields.io/npm/v/eslint-plugin-nodeca.svg)](https://www.npmjs.org/package/eslint-plugin-nodeca)
 
-Playground with [ESLint](http://eslint.org/) rules, used in nodeca projects.
+May be you know, that indentation check was removed from jshint 2.5.0,
+and not yet implemented in eslint. Now you can check code indentation again,
+with awesome [eslint](http://eslint.org/) and this plugin.
 
-- __indent__ - check code identation. The same as existed in jshint, until was ripped off.
-- __no-async-aliases__ - warn on deprecated methods in `async` module.
-- __no-lodash-aliases__ - warn on deprecated methods in `lodash` module.
-- __no-wire-anonymous__ - prohibit anon functions in event handlers of nodeca wire mediator.
+install:
+
+```bash
+npm install eslint-plugin-nodeca --save
+```
+
+Then update `.eslintrc` from instruction below.
+
 
 Indent rule
 -----------
@@ -36,6 +42,15 @@ rules:
   #
   # nodeca/indent: 2
 ```
+
+Other rules
+-----------
+
+Probably, you never need this ones. Those are for internal nodeca needs.
+
+- __no-async-aliases__ - warn on deprecated methods in `async` module.
+- __no-lodash-aliases__ - warn on deprecated methods in `lodash` module.
+- __no-wire-anonymous__ - prohibit anon functions in event handlers of nodeca wire mediator.
 
 
 Authors
