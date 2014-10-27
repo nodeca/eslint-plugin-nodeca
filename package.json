@@ -1,8 +1,12 @@
 {
   "name": "eslint-plugin-nodeca",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Custom eslint rules, used in Nodeca projects.",
-  "keywords": [ "indent", "eslint" ],
+  "keywords": [
+    "indent",
+    "eslint",
+    "eslintplugin"
+  ],
   "homepage": "https://github.com/nodeca/eslint-plugin-nodeca",
   "bugs": {
     "url": "https://github.com/nodeca/eslint-plugin-nodeca/issues"
@@ -20,7 +24,7 @@
     "test": "node node_modules/.bin/eslint --rulesdir lib ./ && node_modules/.bin/mocha"
   },
   "devDependencies": {
-    "eslint": "0.8.0",
+    "eslint": "0.9.1",
     "eslint-tester": "^0.2.0",
     "js-yaml": "^3.2.2",
     "mocha": "^1.21.4"
